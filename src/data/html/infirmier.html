@@ -1,0 +1,129 @@
+<html xmlns:med="http://www.ujf-grenoble.fr/l3miage/medical">
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Infirmier</title>
+        <link rel="stylesheet" type="text/css" href="../css/cabinet.css">
+        <script type="text/javascript">
+					
+						function openFacture(prenom, nom, actes) {
+							   var width  = 500;
+							   var height = 300;
+							   if(window.innerWidth) {
+								   var left = (window.innerWidth-width)/2;
+								   var top = (window.innerHeight-height)/2;
+							   }
+							   else {
+								   var left = (document.body.clientWidth-width)/2;
+								   var top = (document.body.clientHeight-height)/2;
+							   }
+							   var factureWindow = window.open('','facture','menubar=yes, scrollbars=yes, top='+top+', left='+left+', width='+width+', height='+height+'');
+							   factureText = "Facture pour : " + prenom + " " + nom;
+							   factureWindow.document.write(factureText);
+							}
+					
+				</script>
+    </head>
+    <body>
+        <h1>INFIRMIER</h1>
+        <div class="greeting">
+            <p>
+						Bonjour Sarah</p>
+        </div>
+        <ul>
+            <li>
+						Nom :
+						Fr&eacute;chie</li>
+            <li>
+						Pr&eacute;nom :
+						Sarah</li>
+            <li>
+						ID :
+						001</li>
+        </ul>
+        <br>
+        <p>
+            					Vous avez 3 patient(s)
+					
+            <br>
+            <br>
+        </p>
+        <table>
+            <tr>
+                <th>DATE</th><th>PATIENT (nom, pr&eacute;nom)</th><th>ADRESSE</th><th>SOINS</th><th>FACTURE</th>
+            </tr>
+            <tr>
+                <td>2015-12-08</td><td>
+                    <p>Al&eacute;cole, 
+					Yvon</p>
+                </td><td>
+					Etage 6, 
+				
+					num&eacute;ro 50, 
+				avenue F&eacute;lix Viallet, 
+				Grenoble, 
+				38031</td><td>
+                    <ul>
+                        <li>
+			Injection sous-cutan&eacute;e.
+		</li>
+                    </ul>
+                </td><td><button onclick="
+						openFacture(
+						'Yvon',
+						'Al&eacute;cole',
+						'')
+					">
+					Facture
+				</button></td>
+            </tr>
+            <tr>
+                <td>2015-12-08</td><td>
+                    <p>Pien, 
+					Oscare</p>
+                </td><td>rue Casimir Brenier, 
+				Grenoble, 
+				38000</td><td>
+                    <ul>
+                        <li> 
+			Pr&eacute;l&egrave;vement par ponction veineuse directe
+		</li>
+                        <li>
+			Inection intraveineuse directe isol&eacute;e.
+		</li>
+                    </ul>
+                </td><td><button onclick="
+						openFacture(
+						'Oscare',
+						'Pien',
+						'')
+					">
+					Facture
+				</button></td>
+            </tr>
+            <tr>
+                <td>2015-12-11</td><td>
+                    <p>Pien, 
+					Oscare</p>
+                </td><td>rue Casimir Brenier, 
+				Grenoble, 
+				38000</td><td>
+                    <ul>
+                        <li>
+			Injection sous-cutan&eacute;e.
+		</li>
+                        <li>
+			Saign&eacute;e      
+		</li>
+                    </ul>
+                </td><td><button onclick="
+						openFacture(
+						'Oscare',
+						'Pien',
+						'')
+					">
+					Facture
+				</button></td>
+            </tr>
+        </table>
+    </body>
+</html>
