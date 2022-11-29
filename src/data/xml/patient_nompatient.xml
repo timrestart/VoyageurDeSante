@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><patient><nom>Pien</nom><prénom>Oscare</prénom><sexe>F</sexe><naissance>1975-03-25</naissance><numéroSS>275037306569202</numéroSS><adresse><rue>rue Casimir Brenier</rue><codePostal>38000</codePostal><ville>Grenoble</ville></adresse><visite date="2015-12-08"><intervenant><nom>Fréchie</nom><prénom>Sarah</prénom></intervenant><acte> 
+			Prélèvement par ponction veineuse directe
+		</acte><acte>
+			Inection intraveineuse directe isolée.
+		</acte></visite><visite date="2015-12-11"><intervenant><nom>Fréchie</nom><prénom>Sarah</prénom></intervenant><acte>
+			Injection sous-cutanée.
+		</acte><acte>
+			Saignée      
+		</acte></visite></patient>
